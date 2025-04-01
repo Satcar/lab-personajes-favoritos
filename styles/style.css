@@ -19,6 +19,7 @@
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     animation: rotarPaTras 10s linear infinite;
+    opacity: 0.3;
 
     img {
         width: 150px;
@@ -31,6 +32,7 @@
     box-shadow: 0 4px 8px 0 rgba(227, 255, 224, 0.8);
     scale: 125%;
     animation: rotarPaLante 10s linear infinite;
+    opacity: 1;
 }
 
 @keyframes rotarPaLante {
