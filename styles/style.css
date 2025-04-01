@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #405e29;
     padding: 100px;
 }
@@ -18,6 +18,7 @@
     padding: 5px;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    animation: rotarPaTras 10s linear infinite;
 
     img {
         width: 150px;
@@ -29,10 +30,16 @@
     border-color: rgb(121, 206, 121);
     box-shadow: 0 4px 8px 0 rgba(227, 255, 224, 0.8);
     scale: 125%;
-    animation: rotar 3s linear forwards infinite;
+    animation: rotarPaLante 10s linear infinite;
 }
 
-@keyframes rotar {
+@keyframes rotarPaLante {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotarPaTras {
     0% {
         transform: rotate(360deg);
     }
